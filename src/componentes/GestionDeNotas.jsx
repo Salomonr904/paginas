@@ -8,16 +8,18 @@ function GestionDeNotas() {
   const [vista, setVista] = useState('nota'); // 'nota' o 'historial'
 
   return (
-    <div className="gestion-notas">
+    <div className=''>
       <h2>Gestión de Notas</h2>
 
       {/* 🔍 Buscador */}
-      <div className="busqueda">
+      <div className="relative">
         <input type="text" placeholder="Cédula del estudiante" />
         <button>Buscar</button>
 
         {/* 🧭 Botones de vista */}
-        <button onClick={() => setVista('nota')}>Nota</button>
+        <button onClick={() => setVista('nota')}
+        className='bg-blue-400 text-white font-stretch px-6 py-2 rounded-md shadow-md hover:bg-blue-500 transition'
+        >Nota</button>
         <button onClick={() => setVista('historial')}>Historial</button>
       </div>
 

@@ -2,38 +2,38 @@ import React from 'react';
 
 function HistorialNotas() {
   return (
-    <div className="historial-notas">
-      <h3>Evaluaciones y Calificaciones</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Evaluación</th>
-            <th>Tipo de Eval.</th>
-            <th>Observ.</th>
-            <th>Nota</th>
-            <th>Valor</th>
-            <th>Edit.</th>
-            <th>Elim.</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* Puedes mapear aquí un array de notas más adelante */}
-          <tr>
-            <td>--/--/----</td>
-            <td>Ejemplo</td>
-            <td>Parcial</td>
-            <td>Observación breve</td>
-            <td>15</td>
-            <td>20</td>
-            <td><button>🖉</button></td>
-            <td><button>🗑️</button></td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="p-10">
+      <h3 className="bg-blue-800 text-white p-3 rounded-t-lg flex justify-between items-center mb-4">Evaluaciones y Calificaciones</h3>
+      <div className="overflow-x-auto">
+        <table className="min-w-full text-sm border border-gray-300">
+          <thead className="bg-gray-100">
+            <tr>
+              <th className="px-4 py-2 whitespace-nowrap">Fecha</th>
+              <th className="px-4 py-2 whitespace-nowrap">Evaluación</th>
+              <th className="px-4 py-2 whitespace-nowrap">Tipo de Eval.</th>
+              <th className="px-4 py-2 whitespace-nowrap">Observ.</th>
+              <th className="px-4 py-2 whitespace-nowrap">Nota</th>
+              <th className="px-4 py-2 whitespace-nowrap">Valor</th>
+              <th className="px-4 py-2 whitespace-nowrap">Edit.</th>
+              <th className="px-4 py-2 whitespace-nowrap">Elim.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="text-center">
+              <td className="border px-4 py-2">--/--/----</td>
+              <td className="border px-4 py-2">Ejemplo</td>
+              <td className="border px-4 py-2">Parcial</td>
+              <td className="border px-4 py-2">Observación breve</td>
+              <td className="border px-4 py-2">15</td>
+              <td className="border px-4 py-2">20</td>
+              <td className="border px-4 py-2"><button>🖉</button></td>
+              <td className="border px-4 py-2"><button>🗑️</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
 
 export default HistorialNotas;
-
